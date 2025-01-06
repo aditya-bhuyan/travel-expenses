@@ -1,1 +1,3 @@
- 
+
+rootProject.name = 'travel-expenses'
+include 'travel-expenses-consumer', 'travel-expenses-producer'
