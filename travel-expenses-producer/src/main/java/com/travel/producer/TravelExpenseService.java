@@ -9,17 +9,16 @@ import org.springframework.stereotype.Service;
 public class TravelExpenseService {
 
     private final RabbitTemplate rabbitTemplate;
-    private final Queue queue;
+    private final Queue requestQueue;
 
     @Autowired
-    public TravelExpenseService(RabbitTemplate rabbitTemplate, Queue queue) {
+    public TravelExpenseService(RabbitTemplate rabbitTemplate, Queue requestQueue) {
         this.rabbitTemplate = rabbitTemplate;
-        this.queue = queue;
+        this.requestQueue = requestQueue;
     }
 
     public void submitExpenseRequest(String request) {
-        rabbitTemplate.convertAndSend(queue.getName(), request);
-        System.out.println("Sent: " + request);
+        rabbitTemplate.convertAndSend(requestQueue.getName(), request);
+        System.out.println("Sent expense request: " + request);
     }
 }
-

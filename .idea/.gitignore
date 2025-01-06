@@ -1,3 +1,64 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# JDK
+*.class
+*.jar
+*.war
+*.ear
+*.hprof
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*~
+*.*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+*.ipr
+*.iws
+.idea/
+
+# Spring Boot specific
+spring-boot-devtools.properties
+target/
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Gradle Wrapper
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# IntelliJ specific caches
+.idea/modules.xml
+.idea/workspace.xml
+.idea/.name
+.idea/*.iml
+.idea/.idea_modules/
+
+# MacOS Finder
+.DS_Store
+
+# Windows Installer files
+Thumbs.db
+

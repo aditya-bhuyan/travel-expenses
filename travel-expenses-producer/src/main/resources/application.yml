@@ -6,6 +6,12 @@ spring:
     password: guest
 
 travel:
-  queue:
-    name: travel-expenses-queue
+  request:
+    queue:
+      name: travel-expenses-request-queue
+  response:
+    queue:
+      name: travel-expenses-response-queue
 
+server:
+    port: 8081
